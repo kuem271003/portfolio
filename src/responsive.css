@@ -1,0 +1,445 @@
+/* Responsive Design System for Portfolio App */
+
+/* Breakpoints */
+/* 
+  Desktop: 1200px+
+  Tablet: 768px - 1199px  
+  Mobile: 320px - 767px
+  Small Mobile: 320px - 479px
+*/
+
+/* ===== DESKTOP FIRST APPROACH ===== */
+
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .hero h1 {
+    font-size: 100px;
+  }
+  
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1 {
+    font-size: 90px;
+  }
+}
+
+/* Medium Desktop (1200px - 1399px) */
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .hero h1 {
+    font-size: 90px;
+  }
+  
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1 {
+    font-size: 80px;
+  }
+}
+
+/* Small Desktop (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .hero h1 {
+    font-size: 80px;
+  }
+  
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1 {
+    font-size: 70px;
+  }
+  
+  .about,
+  .services,
+  .mywork,
+  .contact {
+    margin: 80px 80px;
+  }
+  
+  .services-container,
+  .mywork-container {
+    gap: 30px;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .hero h1 {
+    font-size: 70px;
+  }
+  
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1 {
+    font-size: 60px;
+  }
+  
+  .about,
+  .services,
+  .mywork,
+  .contact {
+    margin: 60px 50px;
+    gap: 50px;
+  }
+  
+  .about-sections {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  
+  .contact-section {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .hero h1 {
+    font-size: 60px;
+  }
+  
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1 {
+    font-size: 50px;
+  }
+  
+  .about,
+  .services,
+  .mywork,
+  .contact {
+    margin: 50px 30px;
+    gap: 40px;
+  }
+  
+  .services-container,
+  .mywork-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .about-achievements {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%;
+  }
+}
+
+/* Mobile Large (480px - 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+  }
+  
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1 {
+    font-size: 45px;
+  }
+  
+  .about,
+  .services,
+  .mywork,
+  .contact {
+    margin: 40px 20px;
+    gap: 30px;
+  }
+  
+  .hero-action {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .about-skill {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .about-skill hr {
+    width: 100%;
+  }
+}
+
+/* Mobile Small (320px - 479px) */
+@media (max-width: 479px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+  }
+  
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1 {
+    font-size: 40px;
+  }
+  
+  .about,
+  .services,
+  .mywork,
+  .contact {
+    margin: 30px 15px;
+    gap: 25px;
+  }
+  
+  .hero img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .hero p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .hero-action {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .hero-connect,
+  .hero-resume {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+  
+  .about-para {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .about-skill p {
+    font-size: 16px;
+    min-width: auto;
+  }
+  
+  .about-achievement h1 {
+    font-size: 35px;
+  }
+  
+  .about-achievement p {
+    font-size: 16px;
+  }
+  
+  .services-format {
+    padding: 20px;
+  }
+  
+  .services-format h2 {
+    font-size: 24px;
+  }
+  
+  .services-format h3 {
+    font-size: 20px;
+  }
+  
+  .services-format p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .mywork-container img {
+    max-width: 100%;
+  }
+  
+  .mywork-showmore {
+    padding: 15px 25px;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .contact-left h1 {
+    font-size: 40px;
+  }
+  
+  .contact-left p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .contact-details {
+    font-size: 16px;
+    gap: 20px;
+  }
+  
+  .contact-right label {
+    font-size: 16px;
+  }
+  
+  .contact-right input {
+    height: 60px;
+    font-size: 16px;
+  }
+  
+  .contact-right textarea {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .contact-submit {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+/* ===== SPECIAL CASES ===== */
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    padding-top: 60px;
+    gap: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+  }
+  
+  .hero img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero img,
+  .mywork-container img {
+    image-rendering: -webkit-optimize-contrast;
+    -webkit-image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .footer,
+  .hero-action,
+  .contact-submit,
+  .mywork-showmore {
+    display: none;
+  }
+  
+  .hero,
+  .about,
+  .services,
+  .mywork,
+  .contact {
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .hero h1 span,
+  .about-title h1,
+  .services-title h1,
+  .mywork-title h1,
+  .contact-title h1,
+  .contact-left h1 {
+    background: none;
+    color: white;
+    -webkit-text-fill-color: white;
+  }
+  
+  .btn-primary {
+    background: white;
+    color: black;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  /* Already dark theme, no changes needed */
+}
+
+/* Light Mode Support (if user prefers) */
+@media (prefers-color-scheme: light) {
+  /* Could add light theme variant here */
+}

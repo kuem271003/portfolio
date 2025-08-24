@@ -1,0 +1,478 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.contact-title{
+    position: relative;
+}
+
+.contact-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contact-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1{
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.contact-left p{
+    max-width: 550px;
+    color: #DBDBD8;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #DBDBD8;
+    font-size: 22px;
+}
+
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contact-right label{
+    color: #DBD8DB;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-right input {
+    border: none;
+    width: 700px;
+    height: 78px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contact-right textarea{
+    width: 650px;
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contact-submit{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-submit:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .contact {
+        margin: 80px 100px;
+        gap: 60px;
+    }
+    
+    .contact-section {
+        gap: 100px;
+    }
+    
+    .contact-title h1,
+    .contact-left h1 {
+        font-size: 70px;
+    }
+    
+    .contact-right input {
+        width: 600px;
+    }
+    
+    .contact-right textarea {
+        width: 550px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact {
+        margin: 60px 60px;
+        gap: 50px;
+    }
+    
+    .contact-section {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-title h1,
+    .contact-left h1 {
+        font-size: 60px;
+    }
+    
+    .contact-left p {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .contact-details {
+        align-items: center;
+    }
+    
+    .contact-right {
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contact-right input,
+    .contact-right textarea {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .contact-submit {
+        padding: 18px 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 50px 30px;
+        gap: 40px;
+    }
+    
+    .contact-title h1,
+    .contact-left h1 {
+        font-size: 50px;
+        padding: 0px 20px;
+    }
+    
+    .contact-left p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .contact-details {
+        font-size: 20px;
+        gap: 25px;
+    }
+    
+    .contact-right label {
+        font-size: 20px;
+    }
+    
+    .contact-right input {
+        height: 70px;
+        font-size: 18px;
+    }
+    
+    .contact-right textarea {
+        font-size: 18px;
+        padding: 20px;
+    }
+    
+    .contact-submit {
+        padding: 16px 40px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        margin: 40px 20px;
+        gap: 30px;
+    }
+    
+    .contact-title h1,
+    .contact-left h1 {
+        font-size: 40px;
+        padding: 0px 15px;
+    }
+    
+    .contact-left p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .contact-details {
+        font-size: 18px;
+        gap: 20px;
+    }
+    
+    .contact-right label {
+        font-size: 18px;
+    }
+    
+    .contact-right input {
+        height: 60px;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    
+    .contact-right textarea {
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .contact-submit {
+        padding: 14px 35px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mail View Modal Styles */
+.mail-view-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.mail-view-modal {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.mail-view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.6%);
+  border-radius: 20px 20px 0 0;
+}
+
+.mail-view-header h2 {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mail-view-close {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.mail-view-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.mail-view-content {
+  padding: 30px;
+  color: white;
+}
+
+.mail-info {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mail-field {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mail-field:last-child {
+  margin-bottom: 0;
+}
+
+.mail-field strong {
+  color: #DA7C25;
+  margin-right: 8px;
+}
+
+.mail-message {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mail-message strong {
+  color: #DA7C25;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.message-content {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  line-height: 1.6;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.mail-status {
+  text-align: center;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.status-success {
+  color: #4CAF50;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mail-status p {
+  color: #cccccc;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive Design for Mail View */
+@media (max-width: 768px) {
+  .mail-view-overlay {
+    padding: 10px;
+  }
+  
+  .mail-view-modal {
+    max-height: 90vh;
+  }
+  
+  .mail-view-header {
+    padding: 20px;
+  }
+  
+  .mail-view-header h2 {
+    font-size: 20px;
+  }
+  
+  .mail-view-content {
+    padding: 20px;
+  }
+  
+  .mail-field {
+    font-size: 14px;
+  }
+  
+  .message-content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mail-view-header {
+    padding: 15px;
+  }
+  
+  .mail-view-header h2 {
+    font-size: 18px;
+  }
+  
+  .mail-view-content {
+    padding: 15px;
+  }
+  
+  .mail-info,
+  .mail-message,
+  .mail-status {
+    padding: 15px;
+  }
+}
