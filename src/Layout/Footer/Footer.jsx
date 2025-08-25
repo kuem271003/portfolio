@@ -48,10 +48,10 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow Me</h3>
           <div className="social-links">
-            <a href="#" className="social-link">LinkedIn</a>
-            <a href="#" className="social-link">GitHub</a>
-            <a href="#" className="social-link">Twitter</a>
-            <a href="#" className="social-link">Instagram</a>
+            <a href="https://www.facebook.com/ducati.phuong.3" className="social-link">Facebook</a>
+            <a href="https://github.com/kuem271003" className="social-link">GitHub</a>
+            <a href="https://x.com/kuem271003" className="social-link">Twitter</a>
+            <a href="https://www.instagram.com/hphuong271003/" className="social-link">Instagram</a>
           </div>
         </div>
       </div>
